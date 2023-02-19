@@ -8,7 +8,7 @@ int main(int argc, char *argv[]) {
     struct v4l2_capability cap;
     int ret;
 
-    fd = open("/dev/video0", O_RDWR);
+    fd = open("/dev/mydevice", O_RDWR);
     if (fd < 0) {
         perror("Failed to open device");
         return -1;
